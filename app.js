@@ -2,9 +2,6 @@ var express = require('express');
 var app = express();
 
 
-app.get('/', function(req, res) {
-    res.send("Hello World!");
+app.get('/', (req, res) => {
+    res.send("Hello from Node.js Starter Application");
 });
-
-
-console.log("Waiting for requests...");
